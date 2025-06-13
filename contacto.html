@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Contacto | UntrefSchool">
+  <meta name="description" content="Formulario de contacto del instituto de educación primaria UntrefSchool.">
+  <meta name="author" content="UntrefSchool">
+  <link rel="icon" href="img/school.png" type="image/png">
+  <title>Contacto | UntrefSchool</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Belanosima&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #EFF5F5;
+    }
+    h1, h2, h3, h4, h5 {
+      font-family: 'Belanosima', sans-serif;
+    }
+    .nav-link {
+      color: #181823;
+    }
+    .nav-link:hover {
+      color: #FC7300;
+    }
+    .bg-main {
+      background-color: #1F8A70;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg bg-main navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">UntrefSchool</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#quienes">Quienes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#porque">¿Por qué elegirnos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#propuesta">Propuesta educativa</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#noticias">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Formulario de contacto -->
+  <main class="container py-5">
+    <h1 class="mb-4 text-center">Contacto</h1>
+    <p class="text-center">Completá el siguiente formulario y nos pondremos en contacto con vos a la brevedad.</p>
+
+    <form action="https://formsubmit.co/bustamanteaxel241@gmail.com" method="POST" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+
+      <!-- Campos ocultos para formsubmit -->
+      <input type="hidden" name="_next" value="https://tu-sitio.github.io/PROYECTO-INTEGRADOR-WEB-UNTREFSCHOOL/">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        <!-- Redes sociales -->
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h6 class="fw-bold">Redes sociales</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+            <li><a href="#" class="text-white text-decoration-none">X (Twitter)</a></li>
+          </ul>
+        </div>
+        <!-- Instituto -->
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <h5 class="fw-bold m-0">UntrefSchool</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.0587186646!2d-58.258371753998944!3d-37.85891647866464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959aaf1f40b4f07d%3A0xd5c9ae6c428f62f!2sCarmelo%20S%C3%A1nchez!5e0!3m2!1ses-419!2sar!4v1748156980248!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+        <!-- Contacto -->
+        <div class="col-md-4 text-md-end">
+          <h6 class="fw-bold">Contacto</h6>
+          <ul class="list-unstyled">
+            <li>Email: contacto@untrefschool.edu.ar</li>
+            <li>Tel: 11 2222 3333</li>
+            <li>WhatsApp: 11 2222 3344</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

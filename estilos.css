@@ -1,0 +1,39 @@
+:root {
+  --naranja: #FC7300;
+  --verde: #1F8A70;
+  --azul-oscuro: #00425A;
+  --negro: #181823;
+  --gris-claro: #EFF5F5;
+  --fuente-principal: 'Poppins', sans-serif;
+  --fuente-destacada: 'Belanosima', sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--gris-claro);
+  color: var(--negro);
+}
+nav {
+  background-color: var(--naranja);
+}
+footer {
+  background-color: var(--azul-oscuro);
+  color: white;
+}
+
+/* Mobile First */
+
+nav ul {
+  flex-direction: column;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
